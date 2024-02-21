@@ -173,7 +173,7 @@
                     <div class="flex items-center justify-center">
                         <div class="bg-white p-8 text-center">
                             <img src="images/fare.png" alt="" class="ml-6">
-                            <p class="text-3xl font-semibold"><span id="taka">500</span>Taka</p>
+                            <p class="text-3xl font-semibold"><span id="taka">550</span>Taka</p>
                             <p>Per Seat</p>
                         </div>
                     </div>
@@ -181,7 +181,7 @@
             </div>
         </section>
         <div class=" bg-gray-100 p-8 ">
-            <section id="seat" class="container mx-auto lg:mx-w-[1170px] bg-white rounded-xl">
+            <section id="seat" class="container mx-auto lg:mx-w-[1170px] bg-white rounded-xl inter-family">
                 <div class="space-y-6 py-12 ">
 
 
@@ -358,6 +358,9 @@
                                     <button disabled  id="apply-btn" onclick="grandTotal()" class="btn  -ml-24 px-6 bg-[#1DD100] ">Apply</button>
                                 </div>
                                 </div>
+                                <div id="congo" class="text-red-400">
+
+                                </div>
                                 <div class="flex justify-between px-6 text-xl inter-family font-medium">
                                     <p>Grand total</p>
                                     <p>BDT<span id="grand-prize">0</span></p>
@@ -377,7 +380,7 @@
                                     <input type="email" name="" id="" class="border-2 w-full h-14 p-4 rounded-xl" placeholder="Enter your email">
                                 </div>
                                 <div>
-                                    <button type="submit" disabled id="next" class="btn w-full bg-[#1DD100] mt-6">Next</button>
+                                    <button type="submit" disabled id="next" class="btn w-full bg-[#1DD100] mt-6" onclick="my_modal_5.showModal()">Next</button>
                                 </div>
                                 <div class="flex justify-between text-blue-500 mt-6">
                                     <a class="underline"><p> Terms and Conditions</p></a>
@@ -392,8 +395,53 @@
             </section>
         </div>
     </main>
-    <footer>
-
+    <section id="popup">
+        <!-- Open the modal using ID.showModal() method -->
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box text-center ">
+    <img src="images/success.png" alt="" class="mx-auto">
+    <h3 class="font-bold text-lg">Success!</h3>
+    <p class="py-4">Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you.</p>
+    <p> Shortly you will find a confirmation in your email.</p>
+    <div class="modal-action">
+      <form method="dialog" class="mx-auto">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn w-52 bg-[#1DD100] ">continue</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+    </section>
+    <footer class="bg-[#030712]  py-20 ">
+        <div class="text-white flex items-center justify-between px-40 py-10">
+            <div class="inter-family w-80 space-y-4">
+                <p class="text-4xl font-extrabold">P-Ticket</p>
+                <p class="text-gray-400">P-Ticket is a digital platform to make your daily commuting better.</p>
+            </div>
+            <div class="space-y-4">
+                <p>Download our app</p>
+                <div class="flex items-center raleway-family">
+                    <img src="images/playstore.png" alt="">
+                    <div>
+                        <p class="text-sm">GET IT ON</p>
+                        <p>Google Play</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="border-dashed mx-40 border-gray-400">
+        <div class="flex justify-between px-40 py-6">
+            <div>
+                <p class=" text-gray-400">@all rights reserved, P-Ticket services limited.2024</p>
+            </div>
+            <div>
+                <div class="flex justify-around gap-6 text-white">
+                    <p class="">Terms & condition</p>
+                    <p>Return & refund policy</p>
+                    <p>Privacy policy</p>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="script/index.js"></script>
 </body>
